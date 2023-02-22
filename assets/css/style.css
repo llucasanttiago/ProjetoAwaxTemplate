@@ -4,30 +4,34 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     font-size: 13px;
     overflow-x: hidden;
 }
+
+
+/*Header*/
+
 header{
     height: 100px;
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
 }
 .header{
     max-width: 1140px;
-    margin: auto;
     height: 100px;
+    margin: auto;
     display: flex;
     align-items: center;
 }
 .logo{
     width: 100px;
 }
-.logo_img{
+.logoimg{
     width: 80px;
     height: 80px;
-    background-color: #b28756;
-    border-radius: 50%;
+    background-color: #B28756;
+    border-radius: 40px;
 }
 .menu{
     flex: 1;
@@ -51,15 +55,16 @@ header{
     height: 100px;
     display: flex;
     align-items: center;
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid #000;
 }
 .menu li a:hover,
 .menu .active a{
-    border-bottom: 5px solid #b28756;
+    border-bottom: 5px solid #B28756;
+    color: #ccc;
 }
 .button{
     display: inline-block;
-    background-color: #b28756;
+    background-color: #B28756;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -70,7 +75,8 @@ header{
     border-radius: 20px;
 }
 
-/* Main - Banner principal*/
+
+/*Banner*/
 
 .banner{
     height: calc(100vh - 100px);
@@ -90,13 +96,13 @@ header{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
 }
-.banner .sliderarea{
+.banner .slidearea{
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: center;
     align-items: center;
     color: #fff;
-    justify-content: center;
 }
 .banner h1{
     text-transform: uppercase;
@@ -104,13 +110,13 @@ header{
     font-size: 50px;
 }
 .banner h1 span{
-    color: #b28756;
+    color: #B28756;
 }
 .banner h2{
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
-.banner .sliders_pointers{
+.banner .sliders-pointers{
     width: 100vw;
     height: 20px;
     position: absolute;
@@ -122,121 +128,125 @@ header{
 .banner .pointer{
     width: 15px;
     height: 15px;
-    border: 2px solid #b28756;
+    border: 2px solid #B28756;
     border-radius: 8px;
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
 }
 .banner .pointer.active{
-    background-color: #b28756;
+    background-color: #B28756;
 }
 
-/*Section default*/
+
+/*Default*/
 
 .default{
+    width: 100vw;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.default .section_title,
-.default .section_desc{
+.default .section-title,
+.default .section-desc{
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
 }
-.default .section_title{
+.default .section-title{
     font-size: 20px;
 }
-.default .section_desc{
+.default .section-desc{
     font-size: 12px;
-    color: rgb(194, 194, 194);
+    color: #ccc;
     margin-top: 10px;
     margin-bottom: 40px;
 }
-.default .section_body{
+.default .section-body{
     max-width: 1140px;
     margin: auto;
 }
 .default.light{
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
-.default.light .section_title,
-.default.light .section_body{
-    color: black;
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
 }
 .default.dark{
-    background-color: black;
+    background-color: #000;
 }
-.default.dark .section_title,
-.default.dark .section_body{
-    color: #FFF;
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
 }
 
-/* Areas especificas */
 
-.section_aboutus{
+/*About*/
+
+.section-aboutus{
     display: flex;
 }
-.section_aboutus_left{
+.section-aboutus--left{
     flex: 1;
 }
-.section_aboutus_left p{
+.section-aboutus--left p{
     font-size: 14px;
     line-height: 25px;
 }
-.section_aboutus_right{
+.section-aboutus--right{
     width: 520px;
     text-align: center;
 }
-.section_aboutus_right img{
+.section-aboutus--right img{
     width: 480px;
     box-shadow: 0px 5px 10px #333;
 }
 
-/* Services */
 
-.section_services{
+/*Services*/
+
+.section-services{
     display: flex;
 }
-.section_service{
+.section-service{
     flex: 1;
     text-align: center;
     border-right: 1px solid #333;
     padding: 15px;
 }
-.section_service:first-child{
+.section-service:first-child{
     border-left: 1px solid #333;
 }
-.section_service h4{
+.section-service h4{
     margin-top: 20px;
     text-transform: uppercase;
-    font-size: 18px;    
+    font-size: 18px;
 }
-.section_service p{
+.section-service p{
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 13;
     color: #999;
 }
 
-/* Projects */
+/*Projects*/
 
-.section_projects{
+.section-projects{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section_projects_filters{
+.section-projects--filters{
     border: 1px solid #CCC;
     background-color: #EEE;
     border-radius: 30px;
     display: inline-block;
     padding: 0px 20px;
 }
-.section_projects_filters ul,
-.section_projects_filters li{
+.section-projects--filters ul,
+.section-projects--filters li{
     list-style: none;
 }
-.section_projects_filters li{
+.section-projects--filters li{
     display: inline-block;
     padding: 10px;
     text-transform: uppercase;
@@ -246,17 +256,15 @@ header{
     border-bottom: 3px solid #EEE;
     cursor: pointer;
 }
-.section_projects_filters li:hover,
-.section_projects_filters li.active{
-    border-bottom: 3px solid #b28756;
+.section-projects--filters li:hover,
+.section-projects--filters li.active{
+    border-bottom: 3px solid #B28756;
 }
-.section_projects_filters li:first-child{
+.section-projects--filters li:first-child{
     border-left: 0;
 }
 
-/*Photos*/
-
-.section_projects_photos{
+.section-projects--photos{
     width: 100vw;
     max-width: 1140px;
     margin-top: 20px;
@@ -264,18 +272,18 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
-.section_projects_photo{
+.section-projects--photo{
     width: 280px;
 }
-.section_projects_photoarea{
+.section-projects--photoarea{
     margin: 10px;
     width: 260px;
     height: 160px;
 }
-.section_projects_photoarea img{
+.section-projects--photoarea img{
     width: inherit;
     height: inherit;
 }
-.section_projects_photoinfo{
+.section-projects--photoinfo{
     display: none;
 }
