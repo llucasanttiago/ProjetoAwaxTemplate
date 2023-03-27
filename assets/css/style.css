@@ -157,7 +157,7 @@ header{
 }
 .default .section-desc{
     font-size: 12px;
-    color: #ccc;
+    color: #b1b1b1;
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -166,7 +166,7 @@ header{
     margin: auto;
 }
 .default.light{
-    background-color: #f7f7f7;
+    background-color: #f0f0f0;
 }
 .default.light .section-title,
 .default.light .section-body{
@@ -381,7 +381,6 @@ header{
 .section-team--social{
     display: flex;
     margin-top: 20px;
-
 }
 .section-team--social a{
     display: inline-flex;
@@ -394,5 +393,165 @@ header{
     margin-right: 10px;
 }
 .section-team--social a:hover{
+    background-color: #B28756;
+}
+
+/*Section Happy Clients*/
+
+.section-happyclients{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-happyclients .sliders-pointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-happyclients .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-happyclients .pointer.active{
+    background-color: #B28756;
+}
+.section-happyclients--name{
+    font-weight: 600;
+    margin-top: 20px;
+}
+.section-happyclients--area{
+    margin-top: 7px;
+}
+.section-happyclients--quote{
+    margin-top: 20px;
+}
+.section-happyclients--quote img{
+    width: 20px;
+}
+.section-happyclients--descricao{
+    width: 600px;
+    margin-top: 7px;
+    text-align: center;
+    line-height: 20px;
+    color: #969696;
+}
+
+/* Section Empresas */
+
+.section-body .empresas{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.section-body .empresas img{
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/*Section Price*/
+
+.section-body .price{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.section-body .price-table{
+    width: 175px;
+    background-color: white;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.price-table h4{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.price-table .month{
+    font-size: 10px;
+    margin-bottom: 10px;
+    border: none;  
+}
+.price-table p{
+    font-size: 13px;
+}
+.black-claro{
+    background-color: rgb(36, 36, 36);
+}
+
+/*Section Premium*/
+
+.default.light.white{
+    background-color: white;
+}
+.section-premium-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-premium-left{
+    margin-right: 20px;
+}
+.section-premium-left img{
+    width: 350px;
+}
+.section-premium-right{
+    margin-left: 20px;
+}
+.section-premium-right-item{
+    display: flex;
+    width: 400px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.section-premium-right-items img{
+    width: 20px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.section-premium-right-items p{
+    color: #929292;
+}
+.section-premium-linha{
+    border: 1px solid rgb(197, 197, 197);
+    margin-top: 25px;
+}
+
+
+.section-premium-pointers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-premium-pointers .sliders-pointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-premium-pointers .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-premium-pointers .pointer.active{
     background-color: #B28756;
 }
