@@ -529,8 +529,6 @@ header{
     border: 1px solid rgb(197, 197, 197);
     margin-top: 25px;
 }
-
-
 .section-premium-pointers{
     display: flex;
     align-items: center;
@@ -554,4 +552,101 @@ header{
 }
 .section-premium-pointers .pointer.active{
     background-color: #B28756;
+}
+
+/* Section Some Facts */
+
+.section-some-facts{
+    display: flex;
+    justify-content: space-around;
+}
+.section-some-fact{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-some-fact h1{
+    font-size: 34px;
+    color:#B28756;
+}
+#linha{
+    margin-top: 2px;
+    margin-bottom: 18px;
+    border: 2px solid #B28756;
+}
+.section-some-facts-traco{
+    width: 20px;
+}
+.section-some-fact h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.section-some-fact p{
+    text-align: center;
+}
+
+/* Section Redes Sociais */
+
+.section-redes-sociais{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.section-rede-social{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section-rede-social-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section-rede-social-icon img{
+    width: 25px;
+    cursor: pointer;
+}
+.section-rede-social-desc{
+    color: #999;
+}
+
+/* Section Contacts */
+
+.section-contacts{
+    width: 500px;
+    margin: 0 auto;
+}
+.name-email{
+    display: flex;
+    justify-content: space-between;
+}
+.name,
+.email,
+.subject,
+.message{
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.name-border,
+.email-border{
+    border: 1px solid #b1b1b1;
+    width: 230px;
+    margin-top: 13px;
+}
+.subject-border,
+.message-border{
+    border: 1px solid #b1b1b1;
+    margin-top: 13px;
+}
+.message-border{
+    margin-top: 100px;
+}
+.section-contacts-button{
+    display: flex;
+    justify-content: center;
 }
