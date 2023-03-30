@@ -9,7 +9,6 @@ body{
     overflow-x: hidden;
 }
 
-
 /*Header*/
 
 header{
@@ -32,6 +31,9 @@ header{
     height: 80px;
     background-color: #B28756;
     border-radius: 40px;
+}
+.menu-opener{
+    display: none;
 }
 .menu{
     flex: 1;
@@ -74,7 +76,6 @@ header{
     margin-top: 30px;
     border-radius: 20px;
 }
-
 
 /*Banner*/
 
@@ -138,7 +139,6 @@ header{
     background-color: #B28756;
 }
 
-
 /*Default*/
 
 .default{
@@ -180,7 +180,6 @@ header{
     color: #fff;
 }
 
-
 /*About*/
 
 .section-aboutus{
@@ -201,7 +200,6 @@ header{
     width: 480px;
     box-shadow: 0px 5px 10px #333;
 }
-
 
 /*Services*/
 
@@ -263,7 +261,6 @@ header{
 .section-projects--filters li:first-child{
     border-left: 0;
 }
-
 .section-projects--photos{
     width: 100vw;
     max-width: 1140px;
@@ -696,3 +693,183 @@ header{
     height: auto;
 }
 
+/* Footer */
+
+.footer-area{
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.footer-rede-social-icons{
+    display: flex;
+    flex-direction: row;
+}
+.footer-rede-social-icons img{
+    width: 29px;
+    margin-right: 4px;
+}
+.footer-center{
+    width: 300px;
+}
+.footer-right{
+    width: 250px;
+    background-color: #3f3f3f;
+    padding: 20px;
+    text-align: center;
+}
+.footer-botton a{
+    color: #CCC;
+}
+.footer-name{
+    color: #a7a7a7;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.footer-name-border{
+    border: 1px solid #a7a7a7;
+    width: auto;
+    margin-top: 13px;
+}
+
+/* Responsividade */
+
+@media (min-width: 450px) and (max-width: 800px){
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .section-aboutus{
+        flex-direction: column;
+    }
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .section-aboutus--right{
+        width: auto;
+    }
+    .section-services{
+        flex-wrap: wrap;
+    }
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child{
+        border-left: 0;
+    }
+
+    .section-body .empresas{
+        flex-wrap: wrap;
+    }
+    .empresa{
+        min-width: 30%;
+        text-align: center;
+    }
+
+    .section-body .price{
+        flex-wrap: wrap;
+    }
+    .section-body .price-table{
+        min-width: 40%;
+        margin-top: 20px;
+    }
+
+    .section-some-facts{
+        flex-wrap: wrap;
+    }
+    .section-some-fact{
+        min-width: 350px;
+        margin-bottom: 40px;
+    }
+
+    .section-premium-body{
+        flex-direction: column;
+    }
+    .section-premium-left img{
+        margin-bottom: 30px;
+    }
+
+    .section-redes-sociais{
+        flex-wrap: wrap;
+    }
+    .section-rede-social{
+        min-width: 10%;
+        padding: 15px;
+    }
+
+
+    .section-team{
+        max-width: 580px;
+    }
+
+    .section-map--area{
+        width: auto;
+    }
+    .section-map{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section-map--info{
+        width: auto;
+    }
+    .section-map--info-item{
+        margin-bottom: 20px;
+    }
+    .section-map--info-item:last-child{
+        margin-bottom: 0;
+    }
+    .footer-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-area p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-left{
+        align-items: center;
+    }
+    .footer-rodape{
+        margin-top: 20px;
+    }
+}
